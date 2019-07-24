@@ -3,13 +3,13 @@ Checkout.com challenge solution
 
 ## Solution description. 
 
-In order to solve this challenge, I ecided to focus on developing a solution that segregates successfully various software elements that this application requires, which are the controller, the various models, services to handle each request, and a repository to save card information. 
+In order to solve this challenge, I ecided to focus on developing a solution that segregates successfully various software elements, namely the controller, the various models, services to handle each request, and a repository to persist the data. 
 
+  The solution design is mostly based on a set of interfaces. Afterwards, some of these interfaces were developed fully, while others were mocked. Interfaces mocked include used to communicate with each specific bank, and the card information and transaction repository. This is because I believe the implementation of these services will vary depending on architectural decisions that are not completely specified, and thus open for discussion.
+  
   In the startup class, the implementation of each interface is set in the IOC container so that in general only the model classes are instantiated throughout the processing of the requests. While logging is configured, and in some occasions used, the configuration depends on the web.config file and no sinks have been attached for development.
   
-  The solution design is mostly based on a set of interfaces defined. Afterwards, some of these interfaces were developed fully, while others were mocked. Interfaces mocked include a service that is required to understand the API of one specific bank, and the card information and transaction repository. The reason for this is because the implementation for each one of these services will vary depending on architectural decisions that are not completely specified, and thus open for discussion.
-  
-  Regarding further steps, if this was not an exercise project, I would discuss with the development team solutions for the persistence of the data, evaluating local and distributed data persistence. Additionally, further care should be taken in the IBankService development, in order to make sure that the interface can encompass the requirements for several banking services.
+  Regarding further steps, if this was not an exercise project, I would discuss with the development team regarding solutions for the persistence of the data, in order to chose between local and distributed data persistence. Additionally, further care should be taken in the IBankService development, in order to make sure that the interface encompasses the requirements for several banking services.
   
   Due to having to focus on my PhD thesis, I cannot dedicate anymore time to this project. The current solution represents about somewhat under a full day of work. Because of this, no time was available for unit and integration testing. The code is commented and I hope it is easy to navigate and understand. In developing this exercise the materials consulted were several Microsoft documentation pages, library documentation pages, as well as a fair amount of web searches. I would be available for a phone call where questions are asked regarding technical or architectural decisions.
 
