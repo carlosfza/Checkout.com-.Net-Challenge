@@ -1,0 +1,14 @@
+C:\Repos\Checkout\Checkout\obj\Debug\netcoreapp2.2\Checkout.csproj.CoreCompileInputs.cache
+C:\Repos\Checkout\Checkout\obj\Debug\netcoreapp2.2\Checkout.AssemblyInfoInputs.cache
+C:\Repos\Checkout\Checkout\obj\Debug\netcoreapp2.2\Checkout.AssemblyInfo.cs
+C:\Repos\Checkout\Checkout\bin\Debug\netcoreapp2.2\Checkout.deps.json
+C:\Repos\Checkout\Checkout\bin\Debug\netcoreapp2.2\Checkout.runtimeconfig.json
+C:\Repos\Checkout\Checkout\bin\Debug\netcoreapp2.2\Checkout.runtimeconfig.dev.json
+C:\Repos\Checkout\Checkout\bin\Debug\netcoreapp2.2\Checkout.dll
+C:\Repos\Checkout\Checkout\obj\Debug\netcoreapp2.2\Checkout.RazorAssemblyInfo.cache
+C:\Repos\Checkout\Checkout\obj\Debug\netcoreapp2.2\Checkout.RazorAssemblyInfo.cs
+C:\Repos\Checkout\Checkout\obj\Debug\netcoreapp2.2\Checkout.RazorTargetAssemblyInfo.cache
+C:\Repos\Checkout\Checkout\bin\Debug\netcoreapp2.2\Checkout.pdb
+C:\Repos\Checkout\Checkout\obj\Debug\netcoreapp2.2\Checkout.dll
+C:\Repos\Checkout\Checkout\obj\Debug\netcoreapp2.2\Checkout.pdb
+C:\Repos\Checkout\Checkout\obj\Debug\netcoreapp2.2\Checkout.csprojAssemblyReference.cache
