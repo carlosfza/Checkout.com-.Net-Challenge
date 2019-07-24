@@ -44,9 +44,11 @@ In order to solve this challenge, I ecided to focus on developing a solution tha
   A sample transaction was added to the mock repository, so use the "?transactionId=sample" to access it
   
   
-  ### localhost:5000/api/payment/RequestPayment
+  ### api/payment/RequestPayment
   
   HTTP POST
+  
+  localhost:5000/api/payment/RequestPayment
  
   Requests the gateway to process a payment.
   Requires a PaymentRequest model encoded as application/json in the body.
