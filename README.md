@@ -18,7 +18,9 @@ In order to solve this challenge, I ecided to focus on developing a solution tha
 
   Clone the solution in Visual Studio
   
-  Run the Solution
+  Run the Solution the Checkout project Visual Studio
+  
+  The TransactionDetails API can be used in a browser, meanwhile RequestPayment is better tested in another application, such as Postman
   
 ## Notes: 
   Tested internally with Kerberos hosting outside of IIS.
