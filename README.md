@@ -52,6 +52,7 @@ APIs:
   In my solution, I assumed that there may be several banks. We can find out the correct bank by querying the IBankService instances.
   
   json PaymentRequest sample:
+  
   {
           "ammount": 1,
           "currency": "usd",
@@ -66,6 +67,7 @@ APIs:
    }
   
   Sample result:
+  
   {
     "isSuccesful": true,
     "errorInformation": "",
