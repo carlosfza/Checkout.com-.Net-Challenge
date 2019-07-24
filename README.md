@@ -16,18 +16,18 @@ In order to solve this challenge, I ecided to focus on developing a solution tha
 
 ## How to run: 
 
-  Clone the solution in Visual Studio
+  - Clone the solution in Visual Studio
   
-  Run the Solution the Checkout project Visual Studio
+  - Run the Solution the Checkout project Visual Studio
   
-  The TransactionDetails API can be used in a browser, meanwhile RequestPayment is better tested in another application, such as Postman
+  - The TransactionDetails API can be used in a browser, meanwhile RequestPayment is better tested in another application, such as Postman
   
 ## Notes: 
-  Tested internally with Kerberos hosting outside of IIS.
+  - Tested internally with Kerberos hosting outside of IIS.
   
-  Run in with the environment set as "Development". Running as production enabled https redirection, OpenID Connect Client authentication bearer token validation. In Development mode a mock identity is injected, allowing access to the methods.
+  - Run in with the environment set as "Development". Running as production enabled https redirection, OpenID Connect Client authentication bearer token validation. In Development mode a mock identity is injected, allowing access to the methods.
   
-  Using the default configurations. Http runs in port 5000, https in 5001. Better to use http for testing.
+  - Using the default configurations. Http runs in port 5000, https in 5001. Better to use http for testing.
   
 ## APIs:
   
@@ -54,7 +54,7 @@ In order to solve this challenge, I ecided to focus on developing a solution tha
   In my solution, I assumed that there may be several banks. We can find out the correct bank by querying the IBankService instances.
   
   ### json PaymentRequest sample:
-  
+  ```
   {
           "ammount": 1,
           "currency": "usd",
@@ -67,11 +67,12 @@ In order to solve this challenge, I ecided to focus on developing a solution tha
 	        },
           "saveCredentials": true
    }
-  
+  ```
   ### Sample result:
-  
+  ```
   {
     "isSuccesful": true,
     "errorInformation": "",
     "transactionIdentifier": "ojitsiffotipopuhhunxgdjqstgglftnvlakpjlk"
   }
+```
