@@ -1,7 +1,7 @@
 # Checkout.com-.Net-Challenge
 Checkout.com challenge solution
 
-Solution description. 
+## Solution description. 
 
 In order to solve this challenge, I ecided to focus on developing a solution that segregates successfully various software elements that this application requires, which are the controller, the various models, services to handle each request, and a repository to save card information. 
 
@@ -14,24 +14,23 @@ In order to solve this challenge, I ecided to focus on developing a solution tha
   Due to having to focus on my PhD thesis, I cannot dedicate anymore time to this project. The current solution represents about somewhat under a full day of work. Because of this, no time was available for unit and integration testing. The code is commented and I hope it is easy to navigate and understand. In developing this exercise the materials consulted were several Microsoft documentation pages, library documentation pages, as well as a fair amount of web searches. I would be available for a phone call where questions are asked regarding technical or architectural decisions.
 
 
-How to run: 
+## How to run: 
 
   Clone the solution in Visual Studio
   
   Run the Solution
   
-Notes: 
+## Notes: 
   Tested internally with Kerberos hosting outside of IIS.
   
   Run in with the environment set as "Development". Running as production enabled https redirection, OpenID Connect Client authentication bearer token validation. In Development mode a mock identity is injected, allowing access to the methods.
   
   Using the default configurations. Http runs in port 5000, https in 5001. Better to use http for testing.
   
-APIs:
-  api/payment/TranactionDetails?transactionId=<transactionID>
-	
-  example:
+## APIs:
   
+  ### api/payment/TranactionDetails?transactionId=<transactionID>
+	
   HTTP GET
   
   localhost:5000/api/payment/TransactionDetails?transactionId=sample
@@ -42,16 +41,17 @@ APIs:
   
   A sample transaction was added to the mock repository, so use the "?transactionId=sample" to access it
   
+  
+  ### localhost:5000/api/payment/RequestPayment
+  
   HTTP POST
-  
-  localhost:5000/api/payment/RequestPayment
-  
+ 
   Requests the gateway to process a payment.
   Requires a PaymentRequest model encoded as application/json in the body.
   
   In my solution, I assumed that there may be several banks. We can find out the correct bank by querying the IBankService instances.
   
-  json PaymentRequest sample:
+  ### json PaymentRequest sample:
   
   {
           "ammount": 1,
@@ -66,7 +66,7 @@ APIs:
           "saveCredentials": true
    }
   
-  Sample result:
+  ### Sample result:
   
   {
     "isSuccesful": true,
