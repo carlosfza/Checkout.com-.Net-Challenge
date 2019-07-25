@@ -3,7 +3,7 @@ Checkout.com challenge solution
 
 ## Solution description. 
 
-In order to solve this challenge, I ecided to focus on developing a solution that segregates successfully various software elements, namely the controller, the various models, services to handle each request, and a repository to persist the data. 
+In order to solve this challenge, I decided to focus on developing a solution that segregates successfully various software elements, namely the controller, the various models, services to handle each request, and a repository to persist the data. 
 
   The solution design is mostly based on a set of interfaces. Afterwards, some of these interfaces were developed fully, while others were mocked. Interfaces mocked include used to communicate with each specific bank, and the card information and transaction repository. This is because I believe the implementation of these services will vary depending on architectural decisions that are not completely specified, and thus open for discussion.
   
